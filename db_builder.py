@@ -18,6 +18,9 @@ coursesTable = "CREATE TABLE courses (code TEXT, mark INTEGER, id INTEGER);"
 c.execute(studentsTable)
 c.execute(coursesTable)
 
+createPeepAvgTable = "CREATE TABLE peeps_avg (id INTEGER PRIMARY KEY, average NUMERICAL);"
+c.execute(createPeepAvgTable)
+
 # Populate students
 for row in students_file:
     age = row['age']
